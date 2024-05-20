@@ -1,0 +1,32 @@
+body{
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-size: 24px; /* Adjust this value as needed */
+
+
+  /* Set the background image */
+  background-image: url('image.jpeg');
+
+  /* Optional: Adjust background properties */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Scale the background image to cover the entire element */
+  /* You can also specify other properties like background-position, background-attachment, etc. */
+}
+
+button{
+  background-color: rgb(0, 2, 2);
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 24px; /* Adjust this value as needed */
+
+}
+button:hover{
+  background-color: brown;
+}
+img{
+  padding-top: 10px;
+  width: 650px;
+  height: 150px;
+}

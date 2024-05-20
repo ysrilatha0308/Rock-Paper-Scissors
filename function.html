@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fucntions</title>
+</head>
+<body>
+  <h1> Functions : Let us reuse the code </h1>
+      <script>
+            function function1(){
+                console.log ( "Hello");
+                console.log (3+3);
+                  }
+                  function1();
+            // parameters
+            function calculateTax(cost){
+                    console.log(cost * 0.1);
+
+                  }
+                  calculateTax(1000);
+                  calculateTax(2000);
+            // we can add as many parameters we want
+            function calculateTax(cost, taxPercentage = 0.1){
+                  console.log(cost * taxPercentage);
+
+                }
+                calculateTax(1000, 0.2);
+                calculateTax(2000);  // suppose here if you dont't want to add argument than go for defalut parameter
+
+            // examples exercises
+          // ex:1
+            function great(name = "there"){
+                console.log(`Hello ${name}`);
+              }
+              great();
+              great(`Srilu`);
+          // ex : 2
+            function greet(name) {
+                  if (!name) {
+                    console.log('Hi there!');
+                  } else {
+                    console.log(`Hello ${name}!`);
+                  }
+                }
+                greet('Simon');
+                greet('Alice');
+                greet();
+          // ex : 3
+            function convertToFarenheit(celsius){
+                  console.log( (celsius * 9/5)+32);
+                }
+                convertToFarenheit(25);
+          // ex : 4
+            function convertToCelsius(Fahrenheit){
+                  console.log((Fahrenheit - 32) * 5/9);}
+                convertToCelsius(86); 
+
+           // adding above two function by using parameters and if statements
+           
+           function convertToFahrenheit(celsius) {
+        return (celsius * 9 / 5) + 32;
+      }
+
+      function convertToCelsius(fahrenheit) {
+        return (fahrenheit - 32) * 5 / 9;
+      }
+
+      function convertTemperature(degrees, unit) {
+        if (unit === 'C') {
+          const result = convertToFahrenheit(degrees);
+          return `${result}F`;
+        } else if (unit === 'F') {
+          const result = convertToCelsius(degrees);
+          return `${result}C`;
+        }
+      }
+
+      console.log(convertTemperature(25, 'C'));
+      console.log(convertTemperature(86, 'F'));
+             
+      </script>
+</body>
+</html>
